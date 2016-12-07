@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <script src="../js/jquery-3.1.0.min.js"></script>
+      <script src="../js/move.js"></script>
+      <script src="../js/addEvent.js"></script>
+      <link rel="stylesheet" href="../CSS/main.css" type="text/css">
+      <link rel="stylesheet" href="../CSS/zhuce.css" type="text/css">
+      <link rel="stylesheet" href="../CSS/Font-Awesome/css/font-awesome.min.css">
+    <title>注册</title>
+  </head>
+  <body>
+    <div class="regis">
+       <div class="reg">新用户注册</div>
+       <div class="infor">
+         <form action="#" method="post">
+           您的身份是？<br/><br/>
+           <label><input type="radio" name="Fruit" value="">咨询教师</label>
+           <label><input type="radio" name="Fruit" value="">财务</label>
+           <label><input type="radio" name="Fruit" value="">班主任</label>
+           <label><input type="radio" name="Fruit" value="">任课教师</label>
+           <label><input type="radio" name="Fruit" value="">就业教师</label><br/><br/>
+            <ul id="form-ul-id">
+             <li>
+               <label><span>用 户 名</span> <input type="text" name="user" placeholder="请在此输入用户名"></label>
+             </li>
+             <li>
+               <label><span>E m a i l</span> <input type="email" name="email" placeholder="请再此输入邮箱"></label>
+             </li>
+             <li>
+               <label> <span>设置密码</span> <input type="text" name="password" placeholder="请在此输入6-18位密码"></label>
+           </li>
+             </li>
+             <li>
+               <label><span>确认密码</span> <input type="text" name="repassword" placeholder="请确认密码"></label>
+             </li>
+           </ul>
+
+           <div class="form-submit"><button id="form-submit-id">注册</button></div>
+           <div class="direct-login">已有帐号，<a class="mystyle" href="#">直接登录>></a></div>
+         </form>
+       </div>
+    </div>
+
+    <script>
+        window.onload = function (e) {
+
+            var formUlId = document.getElementById("form-ul-id");
+            var inputs = formUlId.getElementsByTagName("input");
+            var hints = formUlId.getElementsByClassName("input-hint");
+
+
+            (function () {
+                for (var i = 0; i < inputs.length - 2; i++){
+                    inputs[i].index = i;
+
+                    inputs[i].onclick = function (e) {
+                        hints[this.index].style.display = "block";
+                    };
+
+                    inputs[i].onfocus = function (e) {
+                        hints[this.index].style.display = "block";
+                    };
+
+                    inputs[i].onblur = function (e) {
+                        hints[this.index].style.display = "none";
+                    };
+                }
+            })();
+
+
+
+        };
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,149 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  width:100%;
+  height: 60px;
+  background: #40aac7;
+
+  line-height: 60px;
+  text-align: center;
+  word-spacing: 16px;
+  letter-spacing: 2px;
+  position: absolute;
+}
+.top ul {
+  width: 100%;
+  height: 60px;
+  float:  top;
+}
+.top ul span {
+  display: inline-block;
+  color:white;
+  font-size: 34px;
+}
+.top  ul li label input {
+  display: inline-block;
+  width: 280px;
+  height: 30px;
+  margin: auto;
+  position: relative;;
+  top:-65px;
+  right: -700px;
+  padding-left: 10px;
+}
+
+.top ul li span {
+  color: black;
+  font-size: 15px;
+
+}
+.top  .form-submit button{
+  display: inline-block;
+  width: 80px;
+  height: 60px;
+  background: #40aac7;
+  color: white;
+  float: right;
+  position: relative;
+  top: -131px;
+}
+.top  .form-submit button span {
+
+  font-size: 20px;
+}
+table{
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: none;
+border-left-style: solid;
+border-top-color: #CCCCCC;
+border-right-color: #CCCCCC;
+border-bottom-color: #CCCCCC;
+border-left-color: #CCCCCC;
+position: relative;
+top: -132px;
+}
+td{
+border-left-width: : 1px;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #CCCCCC;
+}
+
+.overmask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.overmask.current {
+    display: block;
+}
+
+
+
+.foot {
+  margin-top: 20px;
+  width: 100%;
+  height: 65px;
+  /*background: blue;*/
+  position: fixed;
+  bottom: 0px;
+}
+.foot input {
+  width: 150px;
+  margin-left: 20px;
+  font-size: 20px;
+  background: #49b7bf;
+  color: white;
+}
+
+.esta {
+    width: 800px;
+    height: 750px;
+    border-top: 2px solid #e08;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
+    z-index: 101;
+    display: none;
+}
+
+.esta.current {
+    display: block;
+}
+
+.esta.head {
+  height: 60px;
+  line-height: 60px;
+  background: #40aac7;
+
+}
+
+.EditCell_TextBox {
+width: 90%;
+border:1px solid #0099CC;
+}
+.EditCell_DropDownList {
+width: 90%;
+}

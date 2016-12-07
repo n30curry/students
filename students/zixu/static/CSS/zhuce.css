@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  position: absolute;
+}
+.regis {
+  width: 400px;
+  height: 550px;
+  border: 1px solid #aaa;
+  background: white;
+  position: relative;
+  left: 1100px;
+  top: 140px;
+}
+
+.reg {
+  width: 400px;
+  height: 80px;
+  background: #40aac7;
+  font-size: 30px;
+  color: white;
+  line-height: 80px;
+  text-align: center;
+}
+
+.infor {
+  width: 400px;
+  height: 490px;
+  position: absolute;
+  padding: 10px;
+}
+
+.infor form ul li {
+  height: 35px;
+  width: 230px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display:block;
+}
+
+.infor form ul li label {
+  float: left;
+}
+.infor form ul li span {
+   display: inline-block;
+   float: left;
+   position: relative;
+   top: 13px;
+   left: 10px;
+}
+.infor form ul li input {
+    height: 35px;
+    width: 240px;
+    padding-left: 10px;
+    box-shadow: 0 0 4px #CECECE inset;
+    border: 1px solid #abc;
+    display: inline-block;
+    position: relative;
+    left: 85px;
+    top: -20px;
+
+}
+
+.infor form ul li > div {
+    float: left;
+    margin-left: 30px;
+}
+
+.infor form ul  li.protocol {
+    font-size: 12px;
+    padding-left: 85px;
+
+}
+
+.infor form ul  li.protocol input {
+    width: auto;
+    height: auto;
+}
+
+
+
+.infor form div.direct-login {
+    padding-left: 85px;
+}
+
+.infor form div.form-submit button {
+    display: block;
+    width: 230px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color:white;
+    background: #49b7bf;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 20px;
+    margin: auto;
+
+}
+
+
+.infor form div.direct-login {
+    margin-top: 30px;
+    font-size: 12px;
+}
