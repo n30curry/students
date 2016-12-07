@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Show</title>
+
+<style>
+  .current{
+    background: green;
+  }
+  a {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <p style="display:none">{{per}}</p>
+    <h1>欢迎:{{user}}</h1>
+    <table border="0">
+        <tr>
+            <td>name</td>
+            <td>phone</td>
+            <td>zhuanye</td>
+        </tr>
+        {% for line in stu_list %}
+        <tr>
+            <td>{{line.name}}</td>
+            <td>{{line.phone}}</td>
+            <td>{{line.zhuangye}}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+
+    <form action="/zixun/zixun2/" method="post" accept-charset="utf-8">
+        name:<input type="text" name="name" value=""> <br>
+        phone:<input type="text" name="phone" value=""><br>
+        zhuan:<input type="text" name="zhuanye" value=""><br>
+    <p><input type="submit" value="Continue &rarr;"></p>
+    </form>
+
+    <div>
+      {{page}}
+
+    </div>
+
+      <script>
+        var p = document.querySelector("p");
+        var as = document.querySelectorAll("a");
+        var div = document.querySelector("div");
+        var per_item = p.innerHTML
+        // console.log(per_item)
+
+        var length = as.length;
+        for ( var i = 0; i < length  ; i++){
+          as[i].style.display = "inline-block";
+
+        //   as[i].addEventListener('click',function(e){
+        //
+        //     for (var j = 0; j < length; j++){
+        //       as[j].className = "";
+        //
+        //     }
+        //     as[per_item].className = "current";
+        //   },false)
+        }
+
+
+        // for (var j = 0; j < length; j++){
+        //   as[j].className = "";
+        //   as[per_item].className = "current";
+        // }
+        // as[0].style.display = "inline-block";
+        // as[length - 1].style.display = "inline-block";
+        //
+        // for (var i = 1; i< 7; i++){
+        //   as[i].style.display = "inline-block"
+        //
+        // }
+      </script>
+</body>
+</html>

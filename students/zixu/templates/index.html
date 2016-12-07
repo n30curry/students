@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="/zixun/denglu/" method="get">
+      name:<input type="text" name = "name" id="name"><br>
+      password:<input type="password" name="password" id="pwd"><br>
+      <input type="submit">
+    </form>
+
+    <a href="/zixun/zhuce/">注册</a>
+    <br>
+    <div style="color:red">
+    {{data}}
+    </div>
+    <script>
+      window.onload = function(){
+        var div = document.querySelector('div');
+        var name = document.querySelector('#name');
+        var pwd = document.querySelector('#pwd');
+        name.onfocus = function(){
+          div.style.display = "none";
+        }
+        pwd.onfocus = function(){
+          div.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
